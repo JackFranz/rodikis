@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta property="og:title" content="Rodiki Animes Online">
+    <meta property="og:image" content="https://rodiki.com/images/background-logo.webp">
+    <title>Rodiki Animes</title>
+    <link rel="stylesheet" type="text/css" href="oa9s7nansdk.css">
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" href="../images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <meta name="theme-color" content="#f50561">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-overlap u-xl-mode" data-lang="es">
+
+    <div class="video-container">
+                    <video
+                      class="main-video"
+                      id="video"
+                      type="video/mp4"
+                      preload="none"
+                      poster="../images/poster/isekaiojisan.webp"
+                      src="https://player.odycdn.com/api/v4/streams/free/iseji-1-1/8a1f33aa9b785cb6db19b2ad6e67042d5d029acb/da21b1"
+                    ></video>
+                    <div id="ad-container"></div>
+                    <span class="custom-loader">
+                      <lottie-player src="https://lottie.host/fa1deac8-adda-4bcd-a1d9-961d57e1bbbd/BOz8gSx9C6.json" background="transparent" speed="1" style="width: 180px; height: 180px;" loop autoplay></lottie-player>
+                    </span>
+                    <div class="player-state">
+                      <span class="state-btn state-backward">
+                        <ion-icon name="play-back-outline"></ion-icon>
+                        <span class="backward-duration">10</span>
+                      </span>
+                      <span class="main-state state-btn">
+                        <img src="../cdn-player-rodiki/icons/play.svg" id="icon-rodiki">
+                      </span>
+                      <span class="state-btn state-forward">
+                        <span class="forward-duration">10</span>
+                        <ion-icon name="play-forward-outline"></ion-icon>
+                      </span>
+                    </div>
+                    <div class="controls">
+                      <div class="title-boton"><a href="javascript:history.back()"><img class="arrow-img" src="arrow-left.svg"></a>
+                        <h3 class="title-video">Nombre de la pelicula</h3></div>
+                      <div class="duration">
+                          <span class="current-duration">0:00</span>
+                          <span class="total-duration">0:00</span>
+                        <div class="current-time"></div>
+                        <div class="hover-time">
+                          <span class="hover-duration"></span>
+                        </div>
+                        <div class="buffer"></div>
+                      </div>
+                      <div class="btn-controls">
+                        <div class="btn-con">
+                          <span class="play-pause control-btn">
+                            <img src="../cdn-player-rodiki/icons/play.svg" id="icon-rodiki">
+                          </span>
+                          <span class="backward control-btn" title="5 backward">
+                            <img src="../cdn-player-rodiki/icons/backward.svg" id="icon-rodiki">
+                          </span>
+                          <span class="forward control-btn" title="5 forward">
+                            <img src="../cdn-player-rodiki/icons/forward.svg" id="icon-rodiki">
+                          </span>
+                          <span class="volume">
+                            <span class="mute-unmute control-btn">
+                              <img src="../cdn-player-rodiki/icons/volume.png" id="icon-rodiki" class="ico-vol">
+                            </span>
+                            <div class="max-vol">
+                              <div class="current-vol"></div>
+                            </div>
+                          </span>
+                        </div>
+                        <div class="right-controls">
+                          <span class="mini-player control-btn">
+                            <img src="../cdn-player-rodiki/icons/picture-in-picture.svg" id="icon-rodiki">
+                          </span>
+                          <span class="settings control-btn">
+                            <span class="setting-btn">
+                              <img src="../cdn-player-rodiki/icons/speed.svg" id="icon-rodiki">
+                            </span>
+                            <ul class="setting-menu">
+                              <li data-value="2">2.0X</li>
+                              <li data-value="1.5">1.5X</li>
+                              <li data-value="1.25">1.25X</li>
+                              <li data-value="1" class="speed-active">1.0X</li>
+                              <li data-value="0.75">0.75X</li>
+                              <li data-value="0.5">0.5X</li>
+                            </ul>
+                          </span>
+                          <span class="theater-btn control-btn">
+                            <span class="theater-default">
+                              <ion-icon name="tablet-landscape-outline"></ion-icon>
+                            </span>
+                            <span class="theater-active">
+                              <ion-icon name="tv-outline"></ion-icon>
+                            </span>
+                          </span>
+                          <span class="fullscreen-btn control-btn" title="fullscreen">
+                            <span class="full">
+                              <img src="../cdn-player-rodiki/icons/fullscreen.svg" id="icon-rodiki">
+                            </span>
+                            <span class="contract">
+                              <img src="../cdn-player-rodiki/icons/in-fullscreen.svg" id="icon-rodiki">
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+  <script src="../cdn-player-rodiki/jb26asnua7ysg.js"></script>
+</body></html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>search-anime</title>
+    <link rel="stylesheet" href="../api-connect-rodiki-style.css" media="screen">
+<link rel="stylesheet" href="search-anime.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../cmd-injector.js" defer=""></script>
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" href="../images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.typekit.net/ppu6ifd.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta name="theme-color" content="#f50561">
+    <meta property="og:title" content="search-anime">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="es">
+    <div class="splashentrada" id="splashentrada">
+      <div class="todo-contenido correr-animacion">
+          <div class="logonido">
+    <lottie-player src="https://lottie.host/5351ba26-2c04-4d27-bca6-ac78b114ffec/5gfizKx0dV.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+          </div>
+      </div>
+      <div class="imagenesfondo"></div>
+    </div>
+    <header class="u-clearfix u-header u-sticky u-sticky-00c5 u-header" id="sec-29fe"><div class="u-container-style u-expanded-width u-gradient u-group u-hidden-sm u-hidden-xs u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <a href="https://rodiki.com" class="icon-nohover u-image u-logo u-image-1" data-image-width="960" data-image-height="240" title="Rodiki Logo">
+            <img src="../images/rodiki-logotype.svg" class="u-logo-image u-logo-image-1">
+          </a>
+          <nav class="u-hidden-sm u-hidden-xs u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="SM">
+            <div class="menu-collapse" style="font-size: 0.875rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 500;">
+              <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+              </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+              <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-5-light-1 u-text-palette-5-dark-1" href="../home.html" style="padding: 6px 0px;">INICIO</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-5-light-1 u-text-palette-5-dark-1" href="../anime-movies/movies.html" style="padding: 6px 0px;">PELÍCULAS</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-5-light-1 u-text-palette-5-dark-1" href="../categories-anime/categories.html" style="padding: 6px 0px;">CATEGORÍAS</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-white u-text-hover-palette-5-light-1 u-text-palette-5-dark-1" href="../my-list.html" style="padding: 6px 0px;">MI LISTA</a>
+</li></ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+              <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                <div class="u-inner-container-layout u-sidenav-overflow">
+                  <div class="u-menu-close"></div>
+                  <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../home.html">INICIO</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../anime-movies/movies.html">PELÍCULAS</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../categories-anime/categories.html">CATEGORÍAS</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../my-list.html">MI LISTA</a>
+</li></ul>
+                </div>
+              </div>
+              <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+          </nav>
+          <div class="u-clearfix u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+              <div class="u-layout-row">
+                <div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2"><span class="icon-nohover u-custom-color-1 u-file-icon u-hover-feature u-icon u-icon-circle u-text-white u-icon-1" data-href="search-anime.html"><img src="../images/709592-aeba72ce.png" alt=""></span>
+                  </div>
+                </div>
+                <div class="u-align-right u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                  <div class="u-container-layout u-valign-middle u-container-layout-3"><span class="icon-nohover u-border-2 u-border-palette-1-base u-file-icon u-icon u-icon-circle u-icon-2" data-href="/user-profile"><img src="../images/rodiki-logo.svg" alt=""></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-cf8b">
+      <div class="u-container-style u-expanded-width u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <div class='fl-filter-container'>
+    <div class='fl-filter-buttons'>
+        <div class='fl-filter-item'>
+                <div class='fl-search-filter-wrapper'>
+                    <img class="fl-search-svg" src="../images/search-s.svg">
+                    <input type="search" id="search" name="search" placeholder="Buscar series, géneros, año y más..." class='fl-filter-input fl-search-filter'>
+                </div>
+            </div>
+        <div class='fl-filter-button-wrapper'>
+            <div class='fl-select fl-sort-select'>
+                <div class='fl-select-wrapper'>
+                    <button class='fl-select-btn'>
+                        <svg class='fl-sort-icon' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" />
+                            <path d="M0 0h24v24H0z" fill="none" /></svg>
+                        <span class='fl-select-btn__text'>Todos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="fl-select-btn__arrow">
+                            <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
+                        </svg>
+                    </button>
+                    <div class='fl-select-dropdown'>
+                        <ul>
+                            <li>
+                                <input type='radio' id='sort-recent' name='sort' value='original-order' checked>
+                                <label for='sort-recent'>Todos</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='sort-views' name='sort' value='views'>
+                                <label for='sort-views'>Recientes</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='sort-likes' name='sort' value='likes'>
+                                <label for='sort-likes'>Más Populares</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='sort-alpha' name='sort' value='alpha'>
+                                <label for='sort-alpha'>A-Z</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class='fl-filter-btn'>
+                <svg class='fl-filter-icon' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+                    <path d="M0 0h24v24H0z" fill="none" /></svg>
+                <span class='fl-filters-active empty'>0</span>Filtrar</button>
+        </div>
+    </div>
+    <div class='fl-filter-dropdown'>
+        <div class='fl-filter-dropdown-wrapper'>
+            <div id="grid-list-display" class='fl-filter-button-wrapper'>
+            <div class='fl-select fl-view-select'>
+                <div class='fl-select-wrapper'>
+                    <button class='fl-select-btn'>
+                        <span class='fl-select-btn__text'>Grid</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="fl-select-btn__arrow">
+                            <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
+                        </svg>
+                    </button>
+                    <div class='fl-select-dropdown'>
+                        <ul>
+                            <li>
+                                <input type='radio' id='view-grid' name='view' value='fitRows' checked>
+                                <label for='view-grid'>Grid</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='view-list' name='view' value='vertical'>
+                                <label for='view-list'>List</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class='fl-filter-item fl-select fl-filter-select'>
+                <button class='fl-select-reset hidden'>Reiniciar</button>
+                <div class='fl-select-label'>Géneros</div>
+                <div class='fl-select-wrapper'>
+                    <button class='fl-select-btn'>
+                        <span class='fl-select-btn__text'>Todos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="fl-select-btn__arrow">
+                            <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
+                        </svg>
+                    </button>
+                    <div class='fl-select-dropdown genere'>
+                        <ul>
+                            <li>
+                                <input type='radio' id='type-all' name='type' value='' checked>
+                                <label for='type-all'>Todos</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-help-guide' name='type' value='[data-filters~="help-guide"]'>
+                                <label for='type-help-guide'>Acción</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-best-practice' name='type' value='[data-filters~="best-practice"]'>
+                                <label for='type-best-practice'>Aventura</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-comedia' name='type' value='[data-filters~="comedia"]'>
+                                <label for='type-comedia'>Comedia</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-deporte' name='type' value='[data-filters~="deporte"]'>
+                                <label for='type-deporte'>Deporte</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-drama' name='type' value='[data-filters~="drama"]'>
+                                <label for='type-drama'>Drama</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-ecchi' name='type' value='[data-filters~="ecchi"]'>
+                                <label for='type-ecchi'>Ecchi</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-escolares' name='type' value='[data-filters~="escolares"]'>
+                                <label for='type-escolares'>Escolares</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-fantasia' name='type' value='[data-filters~="fantasia"]'>
+                                <label for='type-fantasia'>Fantasía</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-harem' name='type' value='[data-filters~="harem"]'>
+                                <label for='type-harem'>Harem</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-historico' name='type' value='[data-filters~="historico"]'>
+                                <label for='type-historico'>Histórico</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-isekai' name='type' value='[data-filters~="isekai"]'>
+                                <label for='type-isekai'>Isekai</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-mecha' name='type' value='[data-filters~="mecha"]'>
+                                <label for='type-mecha'>Mecha</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-psicologico' name='type' value='[data-filters~="psicologico"]'>
+                                <label for='type-psicologico'>Psicológico</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-misterio' name='type' value='[data-filters~="misterio"]'>
+                                <label for='type-misterio'>Misterio</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-recuentos' name='type' value='[data-filters~="recuentos"]'>
+                                <label for='type-recuentos'>Recuentos de la vida</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-romance' name='type' value='[data-filters~="romance"]'>
+                                <label for='type-romance'>Romance</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-seinen' name='type' value='[data-filters~="seinen"]'>
+                                <label for='type-seinen'>Seinen</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-shoujo' name='type' value='[data-filters~="shoujo"]'>
+                                <label for='type-shoujo'>Shoujo</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-shonen' name='type' value='[data-filters~="shonen"]'>
+                                <label for='type-shonen'>Shonen</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-sobrenatural' name='type' value='[data-filters~="sobrenatural"]'>
+                                <label for='type-sobrenatural'>Sobrenatural</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-terror' name='type' value='[data-filters~="terror"]'>
+                                <label for='type-terror'>Terror</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='type-yuri' name='type' value='[data-filters~="yuri"]'>
+                                <label for='type-yuri'>Yuri</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='fl-filter-item fl-select fl-filter-select'>
+                <button class='fl-select-reset hidden'>Reiniciar</button>
+                <div class='fl-select-label'>Tipo</div>
+                <div class='fl-select-wrapper'>
+                    <button class='fl-select-btn'>
+                        <span class='fl-select-btn__text'>Todos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="fl-select-btn__arrow">
+                            <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
+                        </svg>
+                    </button>
+                    <div class='fl-select-dropdown'>
+                        <ul>
+                            <li>
+                                <input type='radio' id='topic-all' name='topic' value='' checked>
+                                <label for='topic-all'>Todos</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='topic-series' name='topic' value='[data-filters~="series"]'>
+                                <label for='topic-series'>TV Series</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='topic-peliculas' name='topic' value='[data-filters~="peliculas"]'>
+                                <label for='topic-peliculas'>Películas</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='topic-donghuas' name='topic' value='[data-filters~="donghuas"]'>
+                                <label for='topic-donghuas'>Donghuas</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='fl-filter-item fl-select fl-filter-select'>
+                <button class='fl-select-reset hidden'>Reiniciar</button>
+                <div class='fl-select-label'>Idioma</div>
+                <div class='fl-select-wrapper'>
+                    <button class='fl-select-btn'>
+                        <span class='fl-select-btn__text'>Todos</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="fl-select-btn__arrow">
+                            <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
+                        </svg>
+                    </button>
+                    <div class='fl-select-dropdown'>
+                        <ul>
+                            <li>
+                                <input type='radio' id='role-all' name='role' value='' checked>
+                                <label for='role-all'>Todos</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='role-japones' name='role' value='[data-filters~="japones"]'>
+                                <label for='role-japones'>Japonés</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='role-spanish' name='role' value='[data-filters~="spanish"]'>
+                                <label for='role-spanish'>Español Latino</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='role-chino' name='role' value='[data-filters~="chino"]'>
+                                <label for='role-chino'>Chino</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fl-post-container">
+    <div class="fl-post-container__inner grid">
+        <article class="fl-post-item" data-filters="help-guide wordpress content design management marketing" data-views="1000" data-likes="120">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6o6ar04HHNgDZ9y4DkKPxT0F6M9.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Menus in WordPress</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>1 Views</p>
+                    <p>120 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="best-practice wordpress content design management marketing" data-views="1000" data-likes="100">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ixYH9Ngm3IcPtK4964jbvB0Czi9.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Isekai ojisan</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>321 Views</p>
+                    <p>100 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="checklist wrike content management" data-views="1000" data-likes="150">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1TayFHkkov0GBXQUliVEBuMpisz.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Blog Posts in WordPress</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>221 Views</p>
+                    <p>150 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="help-guide divi management marketing" data-views="17" data-likes="40">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bZbGsEQs7tNmvUIlpwsfMRMV671.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Text Modules</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>17 Views</p>
+                    <p>40 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="help-guide divi design" data-views="781" data-likes="50">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/o8jBfZoeau2X3GIB9dg4si3GlAW.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Divi Theme Builder</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>781 Views</p>
+                    <p>50 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="deporte wrike content management" data-views="521" data-likes="250">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qvZCD8x7bowQw3bQdCsbG4E8QeB.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">Widgets in WordPress</h1>
+                <div class="fl-post-excerpt">
+                    <p>This is placeholder text for the article description</p>
+                    <p>521 Views</p>
+                    <p>250 Likes</p>
+                </div>
+            </section>
+        </article>
+        <article class="fl-post-item" data-filters="checklist series content isekai" data-views="520" data-likes="22">
+            <a class="fl-post-image-wrappe" href="###"><img class="img-searching" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qvZCD8x7bowQw3bQdCsbG4E8QeB.jpg" loading="lazy"></a>
+            <section class="fl-post-item-image"></section>
+            <section class="fl-post-item-summary">
+                <h1 class="fl-post-title">ABC</h1>
+                <div class="fl-post-excerpt">
+                    <p>palabras claves</p>
+                    <p>2015 Views</p>
+                    <p>250 Likes</p>
+                </div>
+            </section>
+        </article>
+    </div>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="navig-backbav u-clearfix u-custom-color-3 u-hidden-lg u-hidden-md u-hidden-xl u-section-2" id="sec-b052">
+      <div class="u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-1"><span class="icon-nohover u-custom-color-1 u-file-icon u-hover-feature u-icon u-icon-circle u-icon-1" data-href="../home"><img src="../images/home.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-2"><span class="icon-nohover u-custom-color-1 u-file-icon u-hover-feature u-icon u-icon-circle u-icon-2" data-href="../my-list"><img src="../images/heart.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-3"><span class="icon-nohover u-custom-color-1 u-file-icon u-hover-feature u-icon u-icon-circle u-icon-3" data-href="search-anime"><img src="../images/search-press.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-4"><span class="icon-nohover u-custom-color-1 u-file-icon u-hover-feature u-icon u-icon-circle u-icon-4" data-href="../user-profile"><img src="../images/user.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-palette-2-base u-footer" id="sec-b56a"><div class="u-align-right u-container-style u-expanded-width u-group u-hidden-md u-hidden-sm u-hidden-xs u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <p class="u-text u-text-grey-60 u-text-1">Rodiki Anime © 2022 desarrollado por Croocker, LLC. Todos los derechos reservados</p>
+          <a href="https://rodiki.com" class="u-image u-logo u-image-1" data-image-width="960" data-image-height="240" title="Rodiki Anime">
+            <img src="../images/rodiki-logotype-g.svg" class="u-logo-image u-logo-image-1" alt="Rodiki anime">
+          </a>
+          <div class="u-align-left u-social-icons u-spacing-14 u-social-icons-1">
+            <a class="u-social-url" title="Facebook" target="_blank" href="https://www.facebook.com/people/Rodiki/100086512443492/"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-text-grey-70 u-icon-1"><img src="../images/20837-47c14d4b.png" alt=""></span>
+            </a>
+            <a class="u-social-url" title="YouTube" target="_blank" href="https://www.youtube.com/channel/UC6kBD567sTiQ706QBO9SlSw"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-text-grey-70 u-icon-2"><img src="../images/717426-3f36619e.png" alt=""></span>
+            </a>
+          </div>
+          <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-2">
+            <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2">
+              <a href="../peticiones" class="u-active-none u-border-hover-white u-border-none u-btn u-button-style u-hover-none u-none u-text-grey-60 u-text-hover-grey-30 u-btn-1">Peticiones</a>
+              <a href="../terms-and-conditions" class="u-active-none u-border-hover-white u-border-none u-btn u-button-style u-hover-none u-none u-text-grey-60 u-text-hover-grey-30 u-btn-2">Términos y Condiciones</a>
+              <a href="../privacy-policy" class="u-active-none u-border-hover-white u-border-none u-btn u-button-style u-hover-none u-none u-text-grey-60 u-text-hover-grey-30 u-btn-3">Política de Privacidad</a>
+              <a href="../about-us" class="u-active-none u-border-hover-white u-border-none u-btn u-button-style u-hover-none u-none u-text-grey-60 u-text-hover-grey-30 u-btn-4">Sobre Nosotros</a>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js'></script>
+<script src='https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script><script  src="./script.js"></script>
+</body></html>

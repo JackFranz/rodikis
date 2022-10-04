@@ -626,7 +626,7 @@ function onAdLoaded(adEvent) {
 }
 
 function adContainerClick(event) {
-  console.log("Hizo click en anuncios");
+  console.log("Hizo click en un anuncios");
   if(videoElement.paused) {
     videoElement.play();
   } else {

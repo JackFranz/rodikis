@@ -567,7 +567,7 @@ function initializeIMA() {
   });
 
   var adsRequest = new google.ima.AdsRequest();
-  adsRequest.adTagUrl = 'https://googleads.g.doubleclick.net/pagead/ads?ad_type=video_text_image&client=ca-video-pub-4968145218643279&videoad_start_delay=0&description_url=http%3A%2F%2Fwww.google.com&max_ad_duration=30000&adtest=on';
+  adsRequest.adTagUrl = 'https://pothutepu.com/dGm.F/zWdDG/NwvIZAGFU-/je/mZ9Tu/Z/U/lAkhPYToQS1fNkTYAxx-M/zaYvthNFDbUr1xMKDSEWzsN/wi';
 
 
   //https://googleads.g.doubleclick.net/pagead/ads?ad_type=video_text_image&client=ca-video-pub-4968145218643279&videoad_start_delay=0&description_url=http%3A%2F%2Fwww.google.com&max_ad_duration=30000&adtest=on

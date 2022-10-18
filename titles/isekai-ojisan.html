@@ -25,8 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script src="https://unpkg.com/video.js/dist/video.js"></script>
-     <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
     <meta name="theme-color" content="#f50561">
     <meta property="og:type" content="website">
   </head>
@@ -524,6 +522,32 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
           else
             Removefav();
       }
+      document.addEventListener('DOMContentLoaded', function()
+{
+  var hls_elements = document.querySelectorAll(`video[src*='.m3u8'], video > source[src*='.m3u8']`);
+
+  if (hls_elements.length === 0 || !Hls || !Hls.isSupported())
+   return;
+
+  console.log(`[i] enabling M3U8 HLS shim user script on this page.`);
+
+  for(i of hls_elements)
+  {
+    var video_elem = i.localName.toLowerCase() == "src" && i.parentElement || i;
+    
+    /* if the element is not visible, in typical JS kludge syntax */
+    if (`offsetParent` in video_elem && video_elem.offsetParent === null)
+      continue;
+    
+    console.log(i, i.src, video_elem);
+    
+    var hls = new Hls();
+
+    /* get the original source + get the video element and attach the HLS.js script to it */
+    hls.loadSource(i.src);
+    hls.attachMedia(video_elem);
+  }
+}, false);
       </script>
       <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
     <script src="../cdn-player-rodiki/notify-message.js"></script>

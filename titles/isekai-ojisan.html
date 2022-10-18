@@ -25,6 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.tutorialjinni.com/hls.js/1.2.1/hls.min.js"></script>
     <meta name="theme-color" content="#f50561">
     <meta property="og:type" content="website">
   </head>
@@ -144,9 +145,9 @@
                       class="main-video"
                       id="video"
                       preload="none"
-                      poster="../images/poster/isekaiojisan.webp">
-                      <source src="https://player.odycdn.com/api/v4/streams/tc/iseji-1-1/8a1f33aa9b785cb6db19b2ad6e67042d5d029acb/da21b17da2fa37138ba75ad78021b8487e968f74607f6c7a54c9f539754620ef444114dd2f677c14008bb6510532fea6/master.m3u8" type="application/x-mpegURL">
-                   </video>
+                      poster="../images/poster/isekaiojisan.webp"
+                      src="https://player.odycdn.com/api/v4/streams/tc/iseji-1-1/8a1f33aa9b785cb6db19b2ad6e67042d5d029acb/da21b17da2fa37138ba75ad78021b8487e968f74607f6c7a54c9f539754620ef444114dd2f677c14008bb6510532fea6/master.m3u8"
+                    ></video>
                     <div id="ad-container"></div>
                     <span class="custom-loader">
                       <lottie-player src="https://lottie.host/fa1deac8-adda-4bcd-a1d9-961d57e1bbbd/BOz8gSx9C6.json" background="transparent" speed="1" style="width: 180px; height: 180px;" loop autoplay></lottie-player>
@@ -523,13 +524,15 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       }
           
           //VIDEOM3U8
-      var videoElement = document.getElementById("video");
-        if(videoElement.canPlayType('application/vnd.apple.mpegurl') === "probably" || videoElement.canPlayType('application/vnd.apple.mpegurl') === "maybe"){
-            //Actions like playing the .m3u8 content
-        }
-        else{
-            //Actions like playing another video type
-        }
+      if (Hls.isSupported()) {
+              var video = document.getElementById('video');
+              var hls = new Hls();
+              hls.loadSource(video.src);
+              hls.attachMedia(video);
+            }else{
+                alert("Tu navegador no soporta HLS Stream, utilice otro navegador para visualizar este contenido.");
+            }
+          
       </script>
       <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
     <script src="../cdn-player-rodiki/notify-message.js"></script>
